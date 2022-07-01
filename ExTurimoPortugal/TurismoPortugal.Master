@@ -1,0 +1,190 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="TurismoPortugal.master.cs" Inherits="ExTurimoPortugal.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" type="text/css" media="screen">
+
+    <style type="text/css">
+        /*            .text-font{
+
+                font: 12px "Roboto Mono", monospace; 
+            }
+*/
+
+                body {
+                  background-color: #c6e7ff;
+                  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif, Corbel, serif;
+                  font-weight: 400;
+                  font-size: 12px;
+                  line-height: 1.8;
+                  color: rgba(0, 0, 0, 0.7); }
+                
+                  @media screen and (max-width: 992px) {
+                    body {
+                      font-size: 16px; } }
+                  h1{
+                      font-family: sans-serif, Corbel, serif, "Roboto Mono", monospace;
+                      font-size:20px;
+                      color:#676666;
+                      font-weight:bold; 
+                      }
+                  h3{
+                       font-family: sans-serif, Corbel, serif, "Roboto Mono", monospace;
+                      font-size:20px;
+                      color:#676666;
+                      font-weight:bold; 
+                      }
+                  p{
+                       font-family: sans-serif, Corbel, serif, "Roboto Mono", monospace;
+                  }
+
+                  .font-size{
+                   font-size: 12px;
+                   font-family: sans-serif, Corbel, serif, "Roboto Mono", monospace;
+                  }
+                                      
+        </style>
+
+</head>
+<body class="text-Dark text-font">
+    <form id="form1" runat="server">
+        <!--slide-->
+
+        <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel" style="background-color: #00FFFF">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators1" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators1" data-slide-to="4"></li>
+                <li data-target="#carouselExampleIndicators1" data-slide-to="5"></li>
+                <li data-target="#carouselExampleIndicators1" data-slide-to="6"></li>
+                <li data-target="#carouselExampleIndicators1" data-slide-to="7"></li>
+                <li data-target="#carouselExampleIndicators1" data-slide-to="8"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item shadow active">
+                    <img class="img-fluid w-100" src="imagens/BannersPT/Banner1.jpg" alt="First slide Responsive image">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img class="img-fluid w-100" src="imagens/BannersPT/Banner2.jpg" alt="Second slide Responsive image">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img class="img-fluid w-100" src="imagens/BannersPT/Banner3.jpg" alt="Third slide Responsive image">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img class="img-fluid w-100" src="imagens/BannersPT/Banner4.jpg" alt="Forth slide Responsive image">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="img-fluid w-100" src="imagens/BannersPT/Banner5.jpg" alt="Forth slide Responsive image">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="img-fluid w-100" src="imagens/BannersPT/Banner6.jpg" alt="Forth slide Responsive image">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="img-fluid w-100" src="imagens/BannersPT/Banner7.jpg" alt="Forth slide Responsive image">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="img-fluid w-100" src="imagens/BannersPT/Banner8.jpg" alt="Forth slide Responsive image">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="img-fluid w-100" src="imagens/BannersPT/Banner9.jpg" alt="Forth slide Responsive image">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Anterior</span> </a><a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Seguinte</span> </a>
+        </div>
+
+        <br />
+
+        <!--buttons-->
+  
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                     <div class="btn-fluid ">
+                  <asp:HyperLink ID="HyperLink3"  runat="server" CssClass="btn shadow py-4 px-5 mr-1 bg-light text-dark font-size rounded" NavigateUrl="~/default.aspx" Font-Names="Bodoni MT">DESTINOS</asp:HyperLink>
+                  <asp:HyperLink ID="HyperLink4"  runat="server" CssClass="btn shadow p-4 px-5 m-2 bg-light text-dark font-size rounded" NavigateUrl="~/castelos.aspx" Font-Names="Bodoni MT">CASTELOS</asp:HyperLink>
+                  <asp:HyperLink ID="HyperLink5"  runat="server" CssClass="btn shadow p-4 px-5 m-2 bg-light text-dark font-size rounded" NavigateUrl="~/mosteiros.aspx" Font-Names="Bodoni MT">MOSTEIROS</asp:HyperLink>
+                  <asp:HyperLink ID="HyperLink6"  runat="server" CssClass="btn shadow p-4 ml-1 bg-light text-dark font-size rounded" NavigateUrl="~/gastronomia.aspx" Font-Names="Bodoni MT">GASTRONOMIA</asp:HyperLink>
+                    </div> 
+               </div>
+            </div>
+       </div>
+            <br /> <br /> <br /> <br />
+                  
+                  
+           
+
+
+            
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    <!--Conteudo-->
+                    <p>Conteudo</p>
+                </asp:ContentPlaceHolder>
+                <br /> <br />
+                    <div class="row-1">
+                        <div class="col-8">
+
+                    <div class="col-12 ml-4">
+                    <div class="jumbotron bg-light border  shadow shadow-primary shadow-intensity-lg w-75 p-3 float-right font-weight-dark">
+                        <br />
+                        <p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="https://www.facebook.com/" target="_blank" onmouseover="screen" class="input-group-sm">
+                            <img src="imagens/facebook.png" class="img-fluid" alt="Responsive image" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="http://linkedin.com/in/sandro-seivane/" target="_blank" onmouseover="screen">
+                            <img src="imagens/linkedin.png" class="img-fluid" alt="Responsive image"/>&nbsp;&nbsp;
+                            <img src="imagens/ImagensPortugal/turismo.jpg" class="img-fluid w-25 float-right" alt="Responsive image"/>  
+                                </a>
+                        </p>
+                        
+                        <p class="text-dark text-left">21209 - Todos os Direitos Reservados - <a class="" href="http://www.sandroseivane.pt" target=_blank>Sandro Seivane</a> </p>
+                        
+                     </div>
+                           <br />
+                    
+
+                     </div>
+                </div>
+           </div>
+        <br />
+
+    <!-- jQuery (Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+        </form>
+
+    </body>
+</html>

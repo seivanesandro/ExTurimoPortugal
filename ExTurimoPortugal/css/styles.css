@@ -1,0 +1,36 @@
+@charset "utf-8";
+.container-fluid {
+	background-color: #A7A7A7;
+}
+.card.col-md-12 .card-body .btn.btn-primary {
+	background-color: #0F0F0F;
+	color: #FBA200;
+
+}
+#accordion1 .card #headingOne1 {
+	background-color: #060606;
+}
+#headingOne1 .mb-0 a {
+	color: #FBA200;
+}
+#accordion1 .card #headingTwo1 {
+	background-color: #000000;
+}
+#headingTwo1 .mb-0 .collapsed {
+	color: #FBA200;
+}
+#accordion1 .card #headingThree1 {
+	background-color: #000000;
+}
+#headingThree1 .mb-0 .collapsed {
+	color: #FBA200;
+}
+.container-fluid .text-center.text-uppercase {
+}
+.card.col-md-12 .card-body .card-title {
+	color: #FBA200;
+}
+.jumbotron .lead .btn.btn-primary.btn-lg {
+	background-color: #000000;
+	color: #FBA200;
+}
